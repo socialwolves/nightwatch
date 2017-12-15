@@ -1,3 +1,9 @@
+# Nightwatch & selenium stuff
+reports
+package-lock.json
+selenium-debug.log
+.DS_Store
+
 # Logs
 logs
 *.log
@@ -56,4 +62,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
