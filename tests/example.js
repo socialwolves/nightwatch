@@ -15,15 +15,15 @@ module.exports = {
 			// look for input
 			.assert.visible('input[type=text]')
 			// write some text in input
-			.setValue('input[type=text]', 'rembrandt van rijn')
+			.setValue('input[type=text]', 'social wolves')
 			// find search button...
-			.waitForElementVisible('button[name=btnG]', TIMEOUT_DEFAULT)
+			.waitForElementVisible('input[type=submit]', TIMEOUT_DEFAULT)
 			// ...click it
-			.click('button[name=btnG]')
+			.click('input[type=submit]')
 			// wait for site reload
-			.pause(TIMEOUT_DEFAULT)
+			.waitForElementVisible('a[href="http://socialwolves.com/"]', TIMEOUT_DEFAULT)
 			// check for specific text
-			.assert.containsText('ol#rso li:first-child', 'Rembrandt - Wikipedia')
+			.assert.containsText('a[href="http://socialwolves.com/"]', 'Social Wolves')
 			// close browser
 			.end();
 	}
