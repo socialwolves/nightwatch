@@ -1,4 +1,5 @@
 # Nightwatch & selenium stuff
+config.js
 reports
 package-lock.json
 selenium-debug.log
