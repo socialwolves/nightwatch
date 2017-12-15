@@ -1,13 +1,13 @@
 # nightwatch
 Frontend tests written with nigthwatch-js &amp; selenium
 
-# build
+## build
 ```
 git clone git@github.com:socialwolves/nightwatch.git
 cd nightwatch && npm i && npm i -g nightwatch
 ```
 
-# run
+## tests
 ```
 # run all tests
 npm run test
